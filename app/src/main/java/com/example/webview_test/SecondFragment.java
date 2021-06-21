@@ -1,24 +1,18 @@
 package com.example.webview_test;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.webview_test.databinding.FragmentSecondBinding;
-import com.google.android.material.snackbar.Snackbar;
 
 public class SecondFragment extends Fragment {
 
@@ -59,8 +53,6 @@ public class SecondFragment extends Fragment {
     }
 
     public void back() {
-        NavController nav = NavHostFragment.findNavController(SecondFragment.this);
-
         this.getActivity().onBackPressed();
     }
 
@@ -68,10 +60,6 @@ public class SecondFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-    }
-
-    private void alert(View view) {
-        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).show();
     }
 
     private boolean isBaseUrl(String targetUrl) {
