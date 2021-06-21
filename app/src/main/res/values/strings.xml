@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">webview-test</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Main</string>
+    <string name="second_fragment_label">Boost chat</string>
+    <string name="next">Next</string>
+</resources>
